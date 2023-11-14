@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="GraphPack_2023_2024_V1_0/src"/>
+	<classpathentry kind="src" path="SokobanStarterDemo/src"/>
+	<classpathentry kind="output" path="GraphPack_2023_2024_V1_0/bin"/>
+</classpath>
