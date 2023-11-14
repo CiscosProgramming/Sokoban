@@ -31,7 +31,21 @@ public class Empilhadora implements ImageTile{
 		return 2;
 	}
 
-
+	public void move() {
+		
+		// Gera uma direcao aleatoria para o movimento
+		Direction[] possibleDirections = Direction.values();
+		Random randomizer = new Random();
+		int randomNumber = randomizer.nextInt(possibleDirections.length);
+		Direction randomDirection = possibleDirections[randomNumber];
+		
+		// Move segundo a direcao gerada, mas so' se estiver dentro dos limites
+		Point2D newPosition = position.plus(randomDirection.asVector());
+		if (newPosition.getX()>=0 && newPosition.getX()<10 && 
+			newPosition.getY()>=0 && newPosition.getY()<10 ){
+			position = newPosition;
+		}
+	}
 	
 	public void moveKey(int key) {
 	
